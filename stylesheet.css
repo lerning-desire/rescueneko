@@ -60,13 +60,13 @@ header li > a:hover {
 
 /* メニューアイコン*/
 .menu-icon {
-  display: none;
   color: white;
   float: right;
   font-size: 25px;
   padding: 21px 0;
-  
+  display: none;
 }
+
 
 /* 共通コンテナ */
 .container{
@@ -136,7 +136,7 @@ header li > a:hover {
 
 /* 各猫アイコン */
 .select-wrapper{
-  height:400px;
+  height: 100%;
   padding-bottom: 50px;
   text-align: center;
 }
@@ -168,12 +168,21 @@ header li > a:hover {
   text-align: center;
 }
 
-/* 保護猫 */
-.message-wrapper{
-  height:450px;
-  margin:0 auto;
-  background-image:url(img/back_hogoneko.jpg);
+/* 保護猫div */
+.message-wrapper {
+  height: 500px;
+  margin-top:300px;
+  padding: 100px 0 100px 0;
   text-align: center;
+  background-image:url(img/back_hogoneko.jpg);
+  /* background-size: cover; */
+}
+
+.message-wrapper img{
+  height: 500px;
+  width: 100%;
+  z-index: 0;
+  opacity: 0.3;
 }
 
 .message-wrapper h1{
@@ -325,14 +334,13 @@ footer p{
   background-image:url(img/hogo_top.jpg);
   margin-top: 100px;
   height: 800px;
-  width: 100%;
   background-size: cover;
   margin: 0 auto;
   top: 0;
 }
 .introduction-wrapper img{
-  z-index: 0;
-  opacity: 0.5;
+  /* z-index: 0; */
+  color: rgba(192,192,192,1);
 }
 
 .introductions{
