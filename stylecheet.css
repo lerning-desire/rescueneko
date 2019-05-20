@@ -1,0 +1,362 @@
+* {
+  box-sizing: border-box;
+}
+
+body {
+  font-family: 'Hiragino Kaku Gothic ProN W3', sans-serif;
+  margin: 0;
+}
+
+/* ヘッダー */
+header{
+  height:65px;
+  width:100%;
+  background-color:rgba(34,49,52,0.9);
+  color:white;
+  position:fixed;
+  top: 0;
+  z-index: 10;
+}
+.header-left{
+  text-align: left;
+}
+
+header ul {
+  margin: 0;
+  list-style-type: none;
+  float: left;
+  padding-left: 30px;
+  padding-top:10px;
+}
+
+.logo{
+  float: left;
+  margin:5px 20px;
+}
+
+header li{
+  display: inline-block;
+  padding: 4px 8px;
+  font-size: 20px;
+}
+
+header li > a {
+  text-decoration: none;
+  color: inherit;
+}
+
+header li > a:hover {
+  color: white;
+}
+
+.header-right h1{
+  line-height: 65px;
+  float:left;
+}
+
+.header-right a{
+  float:left;
+}
+
+/* メニューアイコン*/
+.menu-icon {
+  color: white;
+  float: right;
+  font-size: 25px;
+  padding: 21px 0;
+  display: none;
+}
+
+
+/* 共通コンテナ */
+.container{
+  max-width: 1400px;
+  padding:0 15px;
+  top: 0;
+  margin: 0 auto;
+}
+
+/* Top */
+.top-wrapper {
+  height: 500px;
+  padding: 100px 0 100px 0;
+  color: white;
+  text-align: center;
+  background-image:url(img/top-img.jpg);
+  background-size: cover;
+}
+
+.top-img{
+    z-index: 0;
+    opacity: 0.5;
+}
+
+.top-wrapper h1{
+  letter-spacing: 5px;
+  font-size: 45px;
+}
+
+.top-wrapper p{
+  opacity:0.7;
+  margin-bottom:6px;
+}
+
+/* ツイッターボタン */
+.btn-wrapper {
+  text-align: center;
+  margin: 10px 0;
+}
+
+.btn-wrapper p {
+  padding:5px:10px;
+}
+
+.twitter {
+  background-color: #005FFF;
+}
+
+.btn {
+  padding: 8px 24px;
+  color: white;
+  display: inline-block;
+  opacity: 0.8;
+  border-radius: 4px;
+  text-align: center;
+  margin-bottom: 30px;
+  text-decoration: none;
+}
+
+.btn:hover{
+  opacity:1;
+}
+
+.fa {
+  margin-right: 5px;
+}
+
+/* 各猫アイコン */
+.select-wrapper{
+  height:400px;
+  padding-bottom: 50px;
+  text-align: center;
+}
+
+.select-wrapper h1{
+  border-bottom: 1px solid #eee;
+  text-align: center;
+}
+
+.cat{
+  float: left;
+  width: 22%;
+  margin: 0 10px;
+}
+
+.cat-icon img{
+  border-radius: 200px;
+}
+
+.cat-icon a{
+  border-radius: 100px;
+  display:block;
+}
+
+.text-contents{
+  display:inline-block;
+  margin-top:10px;
+  font-size:13px;
+  text-align: center;
+}
+
+/* 保護猫 */
+.message-wrapper{
+  height:450px;
+  margin:0 auto;
+  background-image:url(img/back_hogoneko.jpg);
+  text-align: center;
+}
+
+.message-wrapper h1{
+  color:black;
+  padding-top:100px;
+}
+
+.message-wrapper p{
+  color:black;
+  padding:10px 0;
+}
+
+/* フッター */
+footer{
+  position:fixed;
+  bottom:0;
+  height: 70px;
+  width: 100%;
+  background-color: #444444;
+  color: white;
+
+}
+footer h1{
+  float:left;
+  margin-left:15px;
+}
+
+footer p{
+  padding: 20px 0 0 30px;
+  display:inline-block;
+  float:left;
+}
+
+/* 各猫紹介共通部分 */
+.acount-wrapper{
+  margin:100px 0;
+  text-align: center;
+}
+
+.cat_name{
+  font-weight: normal;
+  border-bottom: 1px solid #C0C0C0;
+}
+
+.acount{
+  margin-bottom: 100px;
+}
+
+/* スライド部分 */
+.slides ul {
+  list-style: none;
+}
+
+.slide-wrapper {
+  text-align: center;
+  width: 1000px;
+  margin: 0 auto;
+  color: #5e6f84;
+  padding: 60px 0;
+}
+
+.slide-title {
+  font-size: 40px;
+  margin-bottom: 30px;
+}
+
+.change-btn-wrapper {
+  width: 500px;
+  margin: 20px auto;
+  font-size: 18px;
+  z-index: 0;
+}
+
+.change-btn-wrapper:after {
+  content: "";
+  clear: both;
+  display:inline-block;
+}
+
+.prev-btn {
+  cursor: pointer;
+  float: left;
+  display:inline-block;
+}
+
+.next-btn {
+  cursor: pointer;
+  float: right;
+}
+
+.slides {
+  padding: 0;
+}
+
+.slide {
+  display: none;
+}
+
+.active {
+  display: block;
+}
+
+.slide img {
+  width: 400px;
+  height: auto;
+  border-radius: 5px;
+  display:inline-block;
+  z-index: 8;
+}
+
+.index-btn-wrapper {
+  /* font-size: 16px; */
+  font-weight: bold;
+  margin-top: 20px;
+}
+
+.index-btn {
+  display: inline-block;
+  color: black;
+  /* background-color: #e0f5ff; */
+  width: 40px;
+  padding: 6px 0;
+  margin: 0 5px;
+  /* border-radius: 3px; */
+  cursor: pointer;
+}
+
+.index-btn img{
+  max-width: 30px;
+}
+
+
+.index-btn:hover {
+  /* color: gray; */
+  /* background-color: #5cabd0; */
+}
+
+
+
+
+
+
+
+
+
+
+/* 保護猫ページ*/
+.introduction-wrapper{
+  background-image:url(img/hogo_top.jpg);
+  margin-top: 100px;
+  height: 800px;
+  width: 100%;
+  background-size: cover;
+  margin: 0 auto;
+  top: 0;
+}
+.introduction-wrapper img{
+  z-index: 0;
+  opacity: 0.5;
+}
+
+.introductions{
+  width: 1400px;
+  padding:0 15px;
+  top: 0;
+  margin: 0 auto;
+}
+
+.introductions h1{
+  color: gray;
+  text-align: center;
+}
+
+.introductions p{
+  margin-top: 30px;
+  text-align: center;
+}
+.introduction-link{
+  margin-top: 50px;
+}
+
+.introduction-link a{
+  text-align: center;
+  display: block;
+  padding-top: 10px;
+}
