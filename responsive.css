@@ -3,14 +3,6 @@
     width: 100%
   }
 
-  .header-right{
-    display:none;
-  }
-
-  .menu-icon{
-    display:block;
-  }
-
   .top-wrapper h1 {
     font-size: 25px;
   }
