@@ -60,13 +60,13 @@ header li > a:hover {
 
 /* メニューアイコン*/
 .menu-icon {
+  display: none;
   color: white;
   float: right;
   font-size: 25px;
   padding: 21px 0;
-  display: none;
+  
 }
-
 
 /* 共通コンテナ */
 .container{
