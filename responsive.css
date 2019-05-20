@@ -3,6 +3,14 @@
     width: 100%
   }
 
+  .header-right{
+    display:none;
+  }
+
+  .menu-icon{
+    display:block;
+  }
+
   .top-wrapper h1 {
     font-size: 25px;
   }
@@ -17,7 +25,10 @@
   }
 
   .message-wrapper {
-    margin-bottom: 50px;
+    background-size: cover;
+    height: 550px;
+    margin-top:800px;
+    margin-bottom:60px;
   }
 
   .message-wrapper img{
@@ -28,6 +39,10 @@
   .slide-wrapper{
     width: 100%;
     padding-right: 10px;
+  }
+
+  .introduction-wrapper{
+    width: 100%;
   }
 }
 
@@ -45,7 +60,7 @@
   }
 
   .twitter {
-    width: 60%;
+    width: 80%;
   }
 
 
@@ -75,10 +90,28 @@
     width: 100%;
   }
 
+
+  .message-wrapper {
+    background-size: cover;
+    height: 400px;
+    margin-top:1600px;
+    margin-bottom:100px;
+  }
+
+  .message-wrapper img{
+    height: 20%;
+    width: 20%;
+    margin-bottom: 50px;
+  }
+
+  .message-wrapper h1{
+    padding-top:20px;
+  }
+
+
   footer {
     text-align: center;
   }
-  
   .slide-wrapper{
     width: 80%;
     padding-right: 10px;
@@ -92,5 +125,8 @@
     width: 80%;
   }
 
+  .introduction-wrapper{
+    width: 100%;
+  }
 
 }
