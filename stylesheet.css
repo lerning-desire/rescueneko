@@ -17,6 +17,7 @@ header{
   top: 0;
   z-index: 10;
 }
+
 .header-left{
   text-align: left;
 }
@@ -60,12 +61,7 @@ header li > a:hover {
 
 /* メニューアイコン*/
 #menu {
-  position: absolute;
-  top: 0;
-  left: 0;
-  right: 0;
-  background: rgba(0, 0, 0, .9);
-  color: #fff;
+  float; right;
   display: none;
 }
 
