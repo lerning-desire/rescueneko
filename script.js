@@ -1,16 +1,20 @@
 $(function() {
   
-  var openMenu = document.getElementById('open-menu');
-  var closeMenu = document.getElementById('close-menu');
-  var menu = document.getElementById('menu');
+    function() {
+      'use strict';
 
-  openMenu.addEventListener.click(function(){
-    menu.classList.add('shown');
-  });
+      var openMenu = document.getElementById('open_menu');
+      var closeMenu = document.getElementById('close_menu');
+      var menu = document.getElementById('menu');
 
-  closeMenu.addEventListener.click(function(){
-    menu.classList.remove('shown');
-  }); 
+      $(openMenu).addEventListener.click(function() {
+        menu.classList.add('.shown');
+      });
+
+      $(closeMenu).addEventListener.click(function() {
+        menu.classList.remove('.shown');
+      });
+    });
 
   function toggleChangeBtn() {
     var slideIndex = $('.slide').index($('.active'));
@@ -24,14 +28,18 @@ $(function() {
 
   $('.index-btn').click(function() {
     $('.active').removeClass('active');
+    
     var clickedIndex = $('.index-btn').index($(this));
+    
     $('.slide').eq(clickedIndex).addClass('active');
     toggleChangeBtn();
 
   });
 
   $('.change-btn').click(function() {
+    
     var $displaySlide = $('.active');
+    
     $displaySlide.removeClass('active');
     if ($(this).hasClass('next-btn')) {
       $displaySlide.next().addClass('active');
