@@ -3,14 +3,6 @@
     width: 100%
   }
 
-  .header-right{
-    display:none;
-  }
-
-  #open-menu{
-    display:block;
-  }
-
   .top-wrapper h1 {
     font-size: 25px;
   }
@@ -59,7 +51,6 @@
     width: 80%;
   }
 
-/* メニューアイコン ここから*/
   .header-right{
     display:none;
   }
@@ -69,7 +60,7 @@
   }
 
   .top-wrapper {
-    padding-top:130px;
+    padding-top: 130px;
   }
 
   .top-wrapper h1 {
@@ -83,7 +74,6 @@
   .cat {
     width: 100%;
   }
-
 
   .message-wrapper {
     background-size: cover;
@@ -101,7 +91,6 @@
   .message-wrapper h1{
     padding-top:20px;
   }
-
 
   footer {
     text-align: center;
