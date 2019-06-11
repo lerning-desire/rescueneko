@@ -27,6 +27,19 @@ $(function() {
       $displaySlide.prev().addClass('active');
     }
     toggleChangeBtn();
-    
   });
+
+
+  var openMenu = document.getElementById('open-menu');
+  var closeMenu = document.getElementById('close-menu');
+  var menu = document.getElementById('menu');
+
+  openMenu.addEventListener('click',function(){
+    menu.classList.add('shown');
+  });
+
+  closeMenu.addEventListener('click',function(){
+    menu.classList.remove('shown');
+  });
+
 });
