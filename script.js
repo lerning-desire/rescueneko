@@ -1,4 +1,16 @@
 $(function() {
+  
+  var openMenu = document.getElementById('open-menu');
+  var closeMenu = document.getElementById('close-menu');
+  var menu = document.getElementById('menu');
+
+  openMenu.addEventListener.click(function(){
+    menu.classList.add('shown');
+  });
+
+  closeMenu.addEventListener.click(function(){
+    menu.classList.remove('shown');
+  }); 
 
   function toggleChangeBtn() {
     var slideIndex = $('.slide').index($('.active'));
