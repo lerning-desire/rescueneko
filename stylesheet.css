@@ -8,6 +8,22 @@ body {
 }
 
 /* ヘッダー */
+#menu.shown {
+  display: none;
+}
+
+#open_menu {
+  float: right;
+  font-size: 24px;
+  display: none;
+}
+
+#close_menu {
+  padding: 15px;
+  float: right;
+  display: none;
+}
+
 header{
   height:65px;
   width:100%;
@@ -58,24 +74,6 @@ header li > a:hover {
 .header-right a{
   float:left;
 }
-
-/* メニューアイコン*/
-#menu.shown {
-  display: block;
-}
-
-#open_menu {
-  float: right;
-  font-size: 24px;
-  display: none;
-}
-
-#close_menu {
-  padding: 15px;
-  float: right;
-  display: none;
-}
-
 
 /* 共通コンテナ */
 .container{
@@ -323,19 +321,10 @@ footer p{
   max-width: 30px;
 }
 
-
 .index-btn:hover {
   /* color: gray; */
   /* background-color: #5cabd0; */
 }
-
-
-
-
-
-
-
-
 
 
 /* 保護猫ページ*/
