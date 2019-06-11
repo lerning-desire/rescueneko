@@ -7,7 +7,7 @@
     display:none;
   }
 
-  .menu-icon{
+  #open-menu{
     display:block;
   }
 
@@ -55,24 +55,18 @@
     font-size: 20px;
   }
 
-  .header-right {
-    display: none;
-  }
-
   .twitter {
     width: 80%;
   }
-
 
 /* メニューアイコン ここから*/
   .header-right{
     display:none;
   }
 
-  .menu-icon{
+  #open-menu{
     display:block;
   }
-/* メニューアイコンここまで*/
 
   .top-wrapper {
     padding-top:130px;
