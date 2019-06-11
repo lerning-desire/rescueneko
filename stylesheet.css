@@ -59,14 +59,13 @@ header li > a:hover {
 }
 
 /* メニューアイコン*/
-.menu-icon {
-  color: white;
-  float: right;
-  font-size: 25px;
-  padding: 21px 0;
+#open-menu{
   display: none;
 }
 
+#close-menu(
+  display: none;
+)
 
 /* 共通コンテナ */
 .container{
